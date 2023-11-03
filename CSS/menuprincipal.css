@@ -1,0 +1,46 @@
+body
+{
+    background-color: rgb(83, 83, 83);
+}
+
+#menuprincipal
+{
+    background-color: #e90e0ee0;
+    border: 5px;
+    border-color: rgb(0, 0, 0);
+}
+
+#tablatitulo
+{
+    background-color: #e90e0ee0;
+}
+
+#factura
+{
+    background-color: grey;
+}
+
+#calculadora
+{
+    background-color: grey;
+}
+
+#nomina
+{
+    background-color: grey;
+}
+
+
+#imgfactura
+{
+    background-color: aliceblue;
+}
+
+#imgjuguetilandia
+{
+    background-color: azure;
+}
+#peso
+{
+    background-color: grey;
+}

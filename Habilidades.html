@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    #skillsInput {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    #skillsInput::placeholder {
+      color: #aaa;
+    }
+
+    #updateButton {
+      padding: 10px 20px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    #updateButton:hover {
+      background-color: #45a049;
+    }
+
+    .skill-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 300px;
+      margin: 20px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<textarea id="skillsInput" placeholder="Escribe tus habilidades aquí" rows="4" cols="50"></textarea><br>
+<button id="updateButton" onclick="updateSkills()">Actualizar Habilidades</button>
+
+<div id="skillsContainer"></div>
+
+<script>
+  function updateSkills() {
+    const skillsText = document.getElementById('skillsInput').value;
+    const skillsContainer = document.getElementById('skillsContainer');
+    skillsContainer.innerHTML = '';
+
+    const skillsArray = skillsText.split('\n');
+    skillsArray.forEach(skill => {
+      const skillBox = document.createElement('div');
+      skillBox.classList.add('skill-box');
+      skillBox.innerHTML = `<h2>${skill}</h2>`;
+      skillsContainer.appendChild(skillBox);
+    });
+  }
+</script><br>
+<br>
+<br>
+<tr id="imgMENU"><div align="center"><th><a href="Hoja de Vida.html"><img src="IMG/INICIO.jpg" width="100" height="100"></a></th>
+</body>
+</html>
